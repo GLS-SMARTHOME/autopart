@@ -1,38 +1,37 @@
 {
   "parts_catalog": {
-    
-  "TM-HY-A6MF2": {
-      "name": "A6MF2 6-Speed Automatic Transmission Assembly",
+    "TM-HY-A6MF2": {
+      "name": "Transmission Automatique 6-Vitesses (A6MF2 Assembly)",
       "brand": "Hyundai OEM Genuine",
       "price": "1150.00",
-      "image": "https://imgur.com"
+      "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-TY-08A": {
-      "name": "A/C Compresseur (2.5L)",
+      "name": "A/C Compresseur (2.5L Layout)",
       "brand": "Denso OEM",
       "price": "285.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-TY-08B": {
-      "name": "A/C Compresseur (2.5L)",
+      "name": "A/C Compresseur (2.5L Layout)",
       "brand": "Denso OEM",
       "price": "289.50",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-TY-08C": {
-      "name": "A/C Compresseur (1.8L)",
+      "name": "A/C Compresseur (1.8L Layout)",
       "brand": "Denso OEM",
       "price": "278.50",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-TY-08D": {
-      "name": "A/C Compresseur (1.8L)",
+      "name": "A/C Compresseur (1.8L Layout)",
       "brand": "Denso OEM",
       "price": "265.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-TY-08E": {
-      "name": "A/C Compresseur (2.5L)",
+      "name": "A/C Compresseur (2.5L Layout)",
       "brand": "Denso OEM",
       "price": "315.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
@@ -50,7 +49,7 @@
       "image": "https://imgur.com/6NeFd2c.jpg"
     },
     "ALT-TY-14C": {
-      "name": "Alternateur 130A ",
+      "name": "Alternateur 130A (TNGA)",
       "brand": "Denso",
       "price": "195.00",
       "image": "https://imgur.com/6NeFd2c.jpg"
@@ -74,193 +73,193 @@
       "image": "https://imgur.com/IAomtDn.jpg"
     },
     "STR-TY-31B": {
-      "name": "Démarreur (1.8L )",
+      "name": "Démarreur (1.8L Block Layout)",
       "brand": "Denso OEM",
       "price": "112.50",
       "image": "https://imgur.com/IAomtDn.jpg"
     },
     "STR-TY-31C": {
-      "name": "Démarreur",
+      "name": "Démarreur (Coaxial Planetary, TNGA)",
       "brand": "Denso OEM",
       "price": "129.00",
       "image": "https://imgur.com/IAomtDn.jpg"
     },
     "BRG-WHL-TY02A": {
-      "name": "Roulement de roue(Camry 2.5L)",
+      "name": "Roulement de Roue Avant (Camry 2.5L)",
       "brand": "Koyo",
       "price": "62.40",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02B": {
-      "name": "Roulement de roue (4-Bolt Flange 1.8L)",
+      "name": "Roulement de Roue Avant (4-Bolt Flange 1.8L)",
       "brand": "Koyo",
       "price": "54.00",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02C": {
-      "name": "Roulement de roue ",
+      "name": "Roulement de Roue Avant (Heavy Duty Hub)",
       "brand": "Koyo",
       "price": "68.50",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02D": {
-      "name": "Roulement de roue",
+      "name": "Roulement de Roue Avant (TNGA Platform)",
       "brand": "Koyo",
       "price": "74.00",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02E": {
-      "name": "Roulement de roue (Gen 11 1.8L)",
+      "name": "Roulement de Roue Avant (Gen 11 1.8L)",
       "brand": "Koyo",
       "price": "59.95",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02F": {
-      "name": "Roulement de roue (4WD/2WD RAV4 Layout)",
+      "name": "Roulement de Roue Avant (RAV4 Layout)",
       "brand": "Koyo",
       "price": "72.00",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "STRUT-TY-11A": {
-      "name": "Roulement de roue (Camry 2010-2011)",
+      "name": "Amortisseur Équipé Paire (Camry 2010-2011)",
       "brand": "KYB",
       "price": "198.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11B": {
-      "name": "Roulement de roue (Camry 2012-2014)",
+      "name": "Amortisseur Équipé Paire (Camry 2012-2014)",
       "brand": "KYB",
       "price": "205.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11C": {
-      "name": "Roulement de roue (Camry 2015-2017)",
+      "name": "Amortisseur Équipé Paire (Camry 2015-2017)",
       "brand": "KYB",
       "price": "210.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11D": {
-      "name": "Roulement de roue (10th Gen Corolla)",
+      "name": "Amortisseur Équipé Paire (10th Gen Corolla)",
       "brand": "KYB",
       "price": "185.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11E": {
-      "name": "Roulement de roue (11th Gen Corolla)",
+      "name": "Amortisseur Équipé Paire (11th Gen Corolla)",
       "brand": "KYB",
       "price": "194.50",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11F": {
-      "name": "Roulement de roue (RAV4 2010-2012)",
+      "name": "Amortisseur Équipé Paire (RAV4 2010-2012)",
       "brand": "KYB",
       "price": "215.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11G": {
-      "name": "Roulement de roue (Camry 2018-2019)",
+      "name": "Amortisseur Équipé Paire (Camry 2018-2019)",
       "brand": "KYB",
       "price": "229.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11H": {
-      "name": "Roulement de roue(RAV4 2013-2019)",
+      "name": "Amortisseur Équipé Paire (RAV4 2013-2019)",
       "brand": "KYB",
       "price": "224.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
-
     "AC-COMP-1012-24": {
-      "name": "A/C Compresseur(2.4L Engine)",
+      "name": "A/C Compresseur (2.4L Engine)",
       "brand": "Halla OEM",
       "price": "225.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-1318-24": {
-      "name": " A/C Compresseur DV16(2.4L Engine)",
+      "name": "A/C Compresseur DV16 (2.4L Engine)",
       "brand": "Doowon OEM",
       "price": "245.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "ALT-HD-12": {
-      "name": "Alternateur 130A",
+      "name": "Alternateur Heavy Duty 130A",
       "brand": "Valeo",
       "price": "189.99",
       "image": "https://imgur.com/6NeFd2c.jpg"
     },
     "STR-OEM-24": {
-      "name": "Démarreur (2.4L Engine)",
+      "name": "Démarreur Motor Assembly (2.4L Engine)",
       "brand": "Valeo OEM",
       "price": "135.50",
       "image": "https://imgur.com/IAomtDn.jpg"
     },
     "STR-TY-31": {
-      "name": "Démarreur(0.8kW / 1.2kW)",
+      "name": "Démarreur Assembly (0.8kW / 1.2kW)",
       "brand": "Denso OEM",
       "price": "118.00",
       "image": "https://imgur.com/IAomtDn.jpg"
     },
     "BRG-WHL-05": {
-      "name": "Roulement de roue",
+      "name": "Roulement de Roue & Moyeu Assembly",
       "brand": "Iljin",
       "price": "58.25",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "BRG-WHL-TY02": {
-      "name": "Roulement de roue",
+      "name": "Roulement de Roue & Moyeu Unitaire",
       "brand": "Koyo",
       "price": "62.40",
       "image": "https://imgur.com/STwO02V.jpg"
     },
     "STRUT-FR-09": {
-      "name": "Roulement de roue",
+      "name": "Jambe de Force Avant Chargée (Paire)",
       "brand": "Mando",
       "price": "175.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "STRUT-TY-11": {
-      "name": "Roulement de roue",
+      "name": "Jambe de Force Excel-G Avant (Paire)",
       "brand": "KYB",
       "price": "198.00",
       "image": "https://imgur.com/zozZpkF.jpg"
     },
     "SPK-IR-04": {
-      "name": "Laser Iridium Spark Plugs (Pack of 4)",
+      "name": "Bougies d'Allumage Laser Iridium (Pack de 4)",
       "brand": "NGK",
       "price": "45.00",
       "image": "https://imgur.com/KALhCby.jpg"
     },
     "COIL-DEN-09": {
-      "name": "Direct Ignition Coil Pack",
+      "name": "Bobine d'Allumage Direct Direct Pack",
       "brand": "Denso",
       "price": "42.00",
       "image": "https://imgur.com/tYfBJZJ.jpg"
     },
     "O2S-DEN-03": {
-      "name": "Upstream Oxygen Sensor",
+      "name": "Sonde Lambda / Capteur d'Oxygène Amont",
       "brand": "Denso",
       "price": "89.25",
-      "image": "https://imgur.com"
+      "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "MB-ACT-88": {
-      "name": "Transmission Shift Actuator Motor",
+      "name": "Moteur d'Actionneur de Changement de Vitesse",
       "brand": "OES Replacement",
       "price": "349.00",
       "image": "https://freepnglogos.com"
     },
     "MB-AIR-99": {
-      "name": "Air Suspension Compressor Pump",
+      "name": "Pompe de Compresseur de Suspension Pneumatique",
       "brand": "Arnott",
       "price": "285.00",
       "image": "https://freepnglogos.com"
     },
     "MB-SAM-11": {
-      "name": "Rear Signal Acquisition Module (SAM)",
+      "name": "Module d'Acquisition de Signal Arrière (SAM)",
       "brand": "Genuine Mercedes",
       "price": "415.00",
       "image": "https://freepnglogos.com"
     }
   },
+
   "vehicles": {
     "hyundai": {
       "santa-fe": {
@@ -299,7 +298,7 @@
         "2018": ["COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
         "2019": ["ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       }
-    }
+    },
 
 "kia": {
   "sorento": {
