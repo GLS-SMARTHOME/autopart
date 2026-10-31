@@ -1,11 +1,17 @@
 {
   "parts_catalog": {
     "TM-HY-A6MF2": {
-      "name": "Transmission Automatique 6-Vitesses (A6MF2 Assembly)",
+      "name": "Boite Vitesse Automatique (A6MF2)",
       "brand": "Hyundai OEM Genuine",
       "price": "1150.00",
-      "image": "https://imgur.com/WJHYxSc.jpg"
+      "image": "https://imgur.com/bWvtoK5.jpg"
     },
+    "AXLE-HY-05L": {
+    "name": "Axe de Transmission(CV Axle)",
+    "brand": "GSP OEM",
+    "price": "89.50",
+    "image": "https://imgur.com"
+  },
     "AC-COMP-TY-08A": {
       "name": "A/C Compresseur (2.5L Layout)",
       "brand": "Denso OEM",
@@ -263,16 +269,16 @@
   "vehicles": {
     "hyundai": {
       "santa-fe": {
-        "2010": ["AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2"],
-        "2011": ["AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2"],
-        "2012": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2"],
-        "2013": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2"],
-        "2014": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2"],
-        "2015": ["ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2"],
-        "2016": ["ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2"],
-        "2017": ["SPK-IR-04", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24", "TM-HY-A6MF2"],
-        "2018": ["COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24", "TM-HY-A6MF2"],
-        "2019": ["ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"]
+        "2010": ["ALT-HD-12","AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2011": ["ALT-HD-12","AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2012": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2013": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2014": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2015": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2016": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2017": ["SPK-IR-04", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2018": ["COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24", "TM-HY-A6MF2", "AXLE-HY-05L"],
+        "2019": ["ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24", "AXLE-HY-05L"]
       },
       "tucson": {
         "2010": ["AC-COMP-1012-24", "STR-OEM-24"],
