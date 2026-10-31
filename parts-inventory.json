@@ -1,18 +1,9 @@
 {
   "parts_catalog": {
-    "AC-COMP-1012-24": {
-      "name": "A/C Compressor Assembly (2.4L Engine)",
-      "brand": "Halla OEM",
-      "price": "225.00",
-      "image": "https://imgur.com/WJHYxSc"
-    },
-    "AC-COMP-1318-24": {
-      "name": "DV16 A/C Compressor Assembly (2.4L Engine)",
-      "brand": "Doowon OEM",
-      "price": "245.00",
-      "image": "https://imgur.com/R6a1FUp.jpg"
-    },
-       "AC-COMP-TY-COR": { "name": "A/C Compressor Assembly (1.8L Compact Platform)", "brand": "Denso OEM", "price": "245.00", "image": "https://imgur.com" },
+    "AC-COMP-1012-24": { "name": "A/C Compressor Assembly (2.4L Engine)", "brand": "Halla OEM", "price": "225.00", "image": "https://imgur.com" },
+    "AC-COMP-1318-24": { "name": "DV16 A/C Compressor Assembly (2.4L Engine)", "brand": "Doowon OEM", "price": "245.00", "image": "https://imgur.com" },
+
+    "AC-COMP-TY-COR": { "name": "A/C Compressor Assembly (1.8L Compact Platform)", "brand": "Denso OEM", "price": "245.00", "image": "https://imgur.com" },
     "AC-COMP-TY-AR25Shared": { "name": "TSE17C A/C Compressor Assembly (2.5L Engine)", "brand": "Denso OEM", "price": "289.50", "image": "https://imgur.com" },
     "AC-COMP-TY-CAM11": { "name": "6SEU16C A/C Compressor Assembly (2.5L Engine)", "brand": "Denso OEM", "price": "265.00", "image": "https://imgur.com" },
     "AC-COMP-TY-RAV10": { "name": "A/C Compressor Assembly (2.5L Engine Base)", "brand": "Denso OEM", "price": "278.00", "image": "https://imgur.com" },
@@ -35,115 +26,24 @@
     "STRUT-TY-CAM12": { "name": "Front Excel-G Strut Assemblies (Pair)", "brand": "KYB", "price": "205.00", "image": "https://imgur.com" },
     "STRUT-TY-TNGA18": { "name": "Front Loaded Strut Assemblies (TNGA Platform)", "brand": "KYB", "price": "235.00", "image": "https://imgur.com" }
 
-    "ALT-HD-12": {
-      "name": "Heavy Duty 130A Alternator Assembly",
-      "brand": "Valeo",
-      "price": "189.99",
-      "image": "https://imgur.com"
-    },
-    "ALT-TY-14": {
-      "name": "Premium 100A Alternator Assembly",
-      "brand": "Denso",
-      "price": "165.00",
-      "image": "https://imgur.com"
-    },
-    "STR-OEM-24": {
-      "name": "Starter Motor Assembly (2.4L Engine)",
-      "brand": "Valeo OEM",
-      "price": "135.50",
-      "image": "https://imgur.com"
-    },
-    "STR-TY-31": {
-      "name": "Starter Motor Assembly (0.8kW / 1.2kW)",
-      "brand": "Denso OEM",
-      "price": "118.00",
-      "image": "https://imgur.com"
-    },
-    "BRG-WHL-05": {
-      "name": "Front Wheel Bearing & Hub Assembly",
-      "brand": "Iljin",
-      "price": "58.25",
-      "image": "https://imgur.com"
-    },
-    "BRG-WHL-TY02": {
-      "name": "Front Wheel Bearing & Hub Unit",
-      "brand": "Koyo",
-      "price": "62.40",
-      "image": "https://imgur.com"
-    },
-    "STRUT-FR-09": {
-      "name": "Front Loaded Strut Assembly (Pair)",
-      "brand": "Mando",
-      "price": "175.00",
-      "image": "https://imgur.com"
-    },
-    "STRUT-TY-11": {
-      "name": "Front Excel-G Strut Assembly (Pair)",
-      "brand": "KYB",
-      "price": "198.00",
-      "image": "https://imgur.com"
-    },
-    "BRK-CER-10": {
-      "name": "Front Premium Ceramic Brake Pad Set",
-      "brand": "Akebono",
-      "price": "64.95",
-      "image": "https://imgur.com"
-    },
-    "OIL-WIX-01": {
-      "name": "Pro-Guard Engine Oil Filter",
-      "brand": "Wix",
-      "price": "12.50",
-      "image": "https://imgur.com"
-    },
-    "SPK-IR-04": {
-      "name": "Laser Iridium Spark Plugs (Pack of 4)",
-      "brand": "NGK",
-      "price": "45.00",
-      "image": "https://imgur.com"
-    },
-    "ROT-BRM-02": {
-      "name": "Front Performance Brake Rotors (Pair)",
-      "brand": "Brembo",
-      "price": "115.00",
-      "image": "https://imgur.com"
-    },
-    "COIL-DEN-09": {
-      "name": "Direct Ignition Coil Pack",
-      "brand": "Denso",
-      "price": "42.00",
-      "image": "https://imgur.com"
-    },
-    "CAB-BOS-07": {
-      "name": "Premium Carbon Cabin Air Filter",
-      "brand": "Bosch Workshop",
-      "price": "18.75",
-      "image": "https://imgur.com"
-    },
-    "O2S-DEN-03": {
-      "name": "Upstream Oxygen Sensor",
-      "brand": "Denso",
-      "price": "89.25",
-      "image": "https://imgur.com"
-    },
-    "MB-ACT-88": {
-      "name": "Transmission Shift Actuator Motor",
-      "brand": "OES Replacement",
-      "price": "349.00",
-      "image": "https://freepnglogos.com"
-    },
-    "MB-AIR-99": {
-      "name": "Air Suspension Compressor Pump",
-      "brand": "Arnott",
-      "price": "285.00",
-      "image": "https://freepnglogos.com"
-    },
-    "MB-SAM-11": {
-      "name": "Rear Signal Acquisition Module (SAM)",
-      "brand": "Genuine Mercedes",
-      "price": "415.00",
-      "image": "https://freepnglogos.com"
-    }
-  },
+    "ALT-HD-12": { "name": "Heavy Duty 130A Alternator Assembly", "brand": "Valeo", "price": "189.99", "image": "https://imgur.com" },
+"ALT-TY-14": { "name": "Premium 100A Alternator Assembly", "brand": "Denso", "price": "165.00", "image": "https://imgur.com" },
+"STR-OEM-24": { "name": "Starter Motor Assembly (2.4L Engine)", "brand": "Valeo OEM", "price": "135.50", "image": "https://imgur.com" },
+"STR-TY-31": { "name": "Starter Motor Assembly (0.8kW / 1.2kW)", "brand": "Denso OEM", "price": "118.00", "image": "https://imgur.com" },
+"BRG-WHL-05": { "name": "Front Wheel Bearing & Hub Assembly", "brand": "Iljin", "price": "58.25", "image": "https://imgur.com" },
+"BRG-WHL-TY02": { "name": "Front Wheel Bearing & Hub Unit", "brand": "Koyo", "price": "62.40", "image": "https://imgur.com" },
+"STRUT-FR-09": { "name": "Front Loaded Strut Assembly (Pair)", "brand": "Mando", "price": "175.00", "image": "https://imgur.com" },
+"STRUT-TY-11": { "name": "Front Excel-G Strut Assembly (Pair)", "brand": "KYB", "price": "198.00", "image": "https://imgur.com" },
+"BRK-CER-10": { "name": "Front Premium Ceramic Brake Pad Set", "brand": "Akebono", "price": "64.95", "image": "https://imgur.com" },
+"OIL-WIX-01": { "name": "Pro-Guard Engine Oil Filter", "brand": "Wix", "price": "12.50", "image": "https://imgur.com" },
+"SPK-IR-04": { "name": "Laser Iridium Spark Plugs (Pack of 4)", "brand": "NGK", "price": "45.00", "image": "https://imgur.com" },
+"ROT-BRM-02": { "name": "Front Performance Brake Rotors (Pair)", "brand": "Brembo", "price": "115.00", "image": "https://imgur.com" },
+"COIL-DEN-09": { "name": "Direct Ignition Coil Pack", "brand": "Denso", "price": "42.00", "image": "https://imgur.com" },
+"CAB-BOS-07": { "name": "Premium Carbon Cabin Air Filter", "brand": "Bosch Workshop", "price": "18.75", "image": "https://imgur.com" },
+"O2S-DEN-03": { "name": "Upstream Oxygen Sensor", "brand": "Denso", "price": "89.25", "image": "https://imgur.com" },
+"MB-ACT-88": { "name": "Transmission Shift Actuator Motor", "brand": "OES Replacement", "price": "349.00", "image": "https://freepnglogos.com" },
+"MB-AIR-99": { "name": "Air Suspension Compressor Pump", "brand": "Arnott", "price": "285.00", "image": "https://freepnglogos.com" },
+"MB-SAM-11": { "name": "Rear Signal Acquisition Module (SAM)", "brand": "Genuine Mercedes", "price": "415.00", "image": "https://freepnglogos.com" }
   "vehicles": {
     "hyundai": {
       "santa-fe": {
