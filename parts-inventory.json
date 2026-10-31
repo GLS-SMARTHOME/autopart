@@ -195,39 +195,33 @@
       "image": "https://imgur.com"
     },
     "BRG-WHL-05": {
-      "name": "Front Wheel Bearing & Hub Assembly",
+      "name": "Roulement de roue",
       "brand": "Iljin",
       "price": "58.25",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02": {
-      "name": "Front Wheel Bearing & Hub Unit",
+      "name": "Roulement de roue",
       "brand": "Koyo",
       "price": "62.40",
       "image": "https://imgur.com"
     },
     "STRUT-FR-09": {
-      "name": "Front Loaded Strut Assembly (Pair)",
+      "name": "Roulement de roue",
       "brand": "Mando",
       "price": "175.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11": {
-      "name": "Front Excel-G Strut Assembly (Pair)",
+      "name": "Roulement de roue",
       "brand": "KYB",
       "price": "198.00",
       "image": "https://imgur.com"
     },
     "BRK-CER-10": {
-      "name": "Front Premium Ceramic Brake Pad Set",
+      "name": "Roulement de roue",
       "brand": "Akebono",
       "price": "64.95",
-      "image": "https://imgur.com"
-    },
-    "OIL-WIX-01": {
-      "name": "Pro-Guard Engine Oil Filter",
-      "brand": "Wix",
-      "price": "12.50",
       "image": "https://imgur.com"
     },
     "SPK-IR-04": {
@@ -236,22 +230,10 @@
       "price": "45.00",
       "image": "https://imgur.com"
     },
-    "ROT-BRM-02": {
-      "name": "Front Performance Brake Rotors (Pair)",
-      "brand": "Brembo",
-      "price": "115.00",
-      "image": "https://imgur.com"
-    },
     "COIL-DEN-09": {
       "name": "Direct Ignition Coil Pack",
       "brand": "Denso",
       "price": "42.00",
-      "image": "https://imgur.com"
-    },
-    "CAB-BOS-07": {
-      "name": "Premium Carbon Cabin Air Filter",
-      "brand": "Bosch Workshop",
-      "price": "18.75",
       "image": "https://imgur.com"
     },
     "O2S-DEN-03": {
@@ -286,11 +268,11 @@
         "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2014": ["BRK-CER-10", "ALT-HD-12", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2014": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "OIL-WIX-01", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2016": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2017": ["BRK-CER-10", "SPK-IR-04", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "COIL-DEN-09", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2019": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"]
       },
       "tucson": {
@@ -298,22 +280,22 @@
         "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2014": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2014": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2015": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
+        "2016": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
         "2017": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "ROT-BRM-02", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2019": ["BRK-CER-10", "ALT-HD-12", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       },
       "sonata": {
         "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2013": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2013": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
         "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2015": ["BRK-CER-10", "SPK-IR-04", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24"],
         "2016": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2017": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2017": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2018": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
         "2019": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       }
@@ -324,23 +306,23 @@
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2014": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2014": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2016": ["BRK-CER-10", "SPK-IR-04", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2017": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2018": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
         "2019": ["BRK-CER-10", "COIL-DEN-09", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       },
       "sportage": {
         "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2013": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2013": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2015": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2016": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
         "2017": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03", "AC-COMP-1318-24", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2019": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       }
     },
