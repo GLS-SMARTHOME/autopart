@@ -168,13 +168,13 @@
       "name": "A/C Compressor Assembly (2.4L Engine)",
       "brand": "Halla OEM",
       "price": "225.00",
-      "image": "https://imgur.com"
+      "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-1318-24": {
       "name": "DV16 A/C Compressor Assembly (2.4L Engine)",
       "brand": "Doowon OEM",
       "price": "245.00",
-      "image": "https://imgur.com"
+      "image": "https://imgur.com/R6a1FUp.jpg"
     },
     "AC-COMP-TY-08": {
       "name": "A/C Compressor Assembly (Denso Style)",
@@ -291,6 +291,7 @@
       "image": "https://freepnglogos.com"
     }
   },
+  
   "vehicles": {
     "hyundai": {
       "santa-fe": {
