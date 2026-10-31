@@ -1,0 +1,69 @@
+{
+  "hyundai": {
+    "santa-fe": {
+      "2015": [
+        { "id": "HY-SF15-01", "name": "Front Ceramic Brake Pad Set", "brand": "Akebono", "price": "64.95", "image": "https://imgur.com" },
+        { "id": "HY-SF15-02", "name": "Heavy Duty Alternator Assembly", "brand": "Valeo", "price": "189.99", "image": "https://imgur.com" }
+      ],
+      "2016": [
+        { "id": "HY-SF16-01", "name": "Premium Engine Oil Filter", "brand": "Wix", "price": "12.50", "image": "https://imgur.com" }
+      ]
+    },
+    "tucson": {
+      "2017": [
+        { "id": "HY-TU17-01", "name": "Laser Iridium Spark Plugs (Pack of 4)", "brand": "NGK", "price": "45.00", "image": "https://imgur.com" }
+      ]
+    },
+    "sonata": {
+      "2015": [
+        { "id": "HY-SO15-01", "name": "High Pressure Fuel Pump Assembly", "brand": "Genuine Hyundai", "price": "210.00", "image": "https://imgur.com" }
+      ]
+    }
+  },
+  "kia": {
+    "sorento": {
+      "2016": [
+        { "id": "KIA-SR16-01", "name": "Rear Gas-Charged Shock Absorber", "brand": "KYB Excel-G", "price": "74.50", "image": "https://imgur.com" }
+      ]
+    },
+    "sportage": {
+      "2014": [
+        { "id": "KIA-SP14-01", "name": "Front Performance Brake Rotors (Pair)", "brand": "Brembo", "price": "115.00", "image": "https://imgur.com" }
+      ]
+    }
+  },
+  "toyota": {
+    "rav4": {
+      "2015": [
+        { "id": "TOY-RV15-01", "name": "Upstream Oxygen Sensor", "brand": "Denso", "price": "89.25", "image": "https://imgur.com" }
+      ]
+    },
+    "corolla": {
+      "2014": [
+        { "id": "TOY-CO14-01", "name": "Engine Ignition Coil Pack", "brand": "Denso", "price": "42.00", "image": "https://imgur.com" }
+      ]
+    },
+    "camry": {
+      "2016": [
+        { "id": "TOY-CA16-01", "name": "Premium Carbon Cabin Air Filter", "brand": "Bosch Workshop", "price": "18.75", "image": "https://imgur.com" }
+      ]
+    }
+  },
+  "mercedes": {
+    "sprinter": {
+      "2015": [
+        { "id": "MB-SP15-01", "name": "Transmission Shift Actuator Motor", "brand": "OES Replacement", "price": "349.00", "image": "https://freepnglogos.com" }
+      ]
+    },
+    "m-class": {
+      "2012": [
+        { "id": "MB-MC12-01", "name": "Air Suspension Compressor Pump", "brand": "Arnott", "price": "285.00", "image": "https://freepnglogos.com" }
+      ]
+    },
+    "gl-class": {
+      "2014": [
+        { "id": "MB-GL14-01", "name": "Rear Signal Acquisition Module (SAM)", "brand": "Genuine Mercedes", "price": "415.00", "image": "https://freepnglogos.com" }
+      ]
+    }
+  }
+}
