@@ -168,13 +168,13 @@
       "name": "A/C Compressor Assembly (2.4L Engine)",
       "brand": "Halla OEM",
       "price": "225.00",
-      "image": "https://imgur.com/WJHYxSc.jpg"
+      "image": "https://imgur.com"
     },
     "AC-COMP-1318-24": {
       "name": "DV16 A/C Compressor Assembly (2.4L Engine)",
       "brand": "Doowon OEM",
       "price": "245.00",
-      "image": "https://imgur.com/R6a1FUp.jpg"
+      "image": "https://imgur.com"
     },
     "AC-COMP-TY-08": {
       "name": "A/C Compressor Assembly (Denso Style)",
@@ -186,13 +186,13 @@
       "name": "Heavy Duty 130A Alternator Assembly",
       "brand": "Valeo",
       "price": "189.99",
-      "image": "https://imgur.com/undefined.jpg"
+      "image": "https://imgur.com"
     },
     "ALT-TY-14": {
       "name": "Premium 100A Alternator Assembly",
       "brand": "Denso",
       "price": "165.00",
-      "image": "https://imgur.com/JvyTdKk.jpg"
+      "image": "https://imgur.com"
     },
     "STR-OEM-24": {
       "name": "Starter Motor Assembly (2.4L Engine)",
@@ -291,7 +291,6 @@
       "image": "https://freepnglogos.com"
     }
   },
-  
   "vehicles": {
     "hyundai": {
       "santa-fe": {
