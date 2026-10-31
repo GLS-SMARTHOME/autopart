@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLS STORE </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding-top: 60px;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      z-index: 1001;
+    }
+
+    .header-content {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .icon-left {
+      color: #4CAF50;
+      font-size: 1.5em;
+    }
+
+    .hamburger {
+      font-size: 1.5em;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Sidebar for mobile */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 220px;
+      height: 100%;
+      background: #fff;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.15);
+      padding-top: 60px;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.open {
+      left: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .sidebar a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Collection Layout */
+    .collections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 10px 0 5px 0;
+      color: #222;
+    }
+
+    .product-desc {
+      font-size: 0.9em;
+      color: #555;
+      min-height: 40px;
+    }
+
+    /* WhatsApp Floating */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20b358;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #000;
+    }
+    .logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="https://gls-smarthome.github.io/Boutique/Accueil" class="logo-link">
+  <img src="https://imgur.com/hC14VSz.png" alt="GLS Logo" class="logo-img" />
+</a>
+    <div class="header-content">GLS SMARTHOME</div>
+    <i class="fas fa-bars hamburger" id="hamburgerBtn"></i>
+  </header>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <a href="https://gls-smarthome.github.io/Boutique/Accueil">Accueil</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Automation">Automation</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Security">Sécurité</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Electronic">Electronique</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Electric">Electricité</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Network">Réseau</a>
+  <a href="https://gls-smarthome.github.io/Boutique/Contact">Contact</a>
+</div>
+
+  <!-- Main Content -->
+  <div class="collections">
+    <div class="product-card">
+      <a href="https://gls-smarthome.github.io/Boutique/Automation">
+        <img class="product-image" src="https://imgur.com/WZEm0xY.jpg" alt="Automation" />
+      </a>
+      <div class="product-name">Automation</div>
+      <div class="product-desc">l'ensemble des techniques qui permettent de contrôler et d'automatiser divers systèmes et appareils dans une maison à l'aide de technologies numériques</div>
+    </div>
+
+    <div class="product-card">
+      <a href="https://gls-smarthome.github.io/Boutique/Security">
+        <img class="product-image" src="https://imgur.com/AQLoVfa.jpg" alt="Security" />
+      </a>
+      <div class="product-name">Sécurité Electronique</div>
+      <div class="product-desc">La sécurité électronique englobe l'utilisation de technologies et de dispositifs électroniques pour protéger les personnes, les biens et les informations</div>
+    </div>
+  
+    <div class="product-card">
+      <a href="https://gls-smarthome.github.io/Boutique/Electronic">
+        <img class="product-image" src="https://imgur.com/88CGcFG.jpg" alt="Electronic" />
+      </a>
+      <div class="product-name">Appareils Electronique</div>
+      <div class="product-desc">Un appareil électronique est un objet qui peut effectuer une ou des tâches en traitant des informations codées sous la forme de signaux électriques</div>
+    </div>
+    
+    <div class="product-card">
+      <a href="https://gls-smarthome.github.io/Boutique/Electric">
+        <img class="product-image" src="https://imgur.com/Nf9l2Mo.jpg" alt="Electric" />
+      </a>
+      <div class="product-name">Électricité</div>
+      <div class="product-desc">Composant electrique</div>
+    </div>
+
+    
+    <div class="product-card">
+      <a href="https://gls-smarthome.github.io/Boutique/Network">
+        <img class="product-image" src="https://imgur.com/duQwZma.jpg" alt="Network" />
+      </a>
+      <div class="product-name">Appareil Réseau</div>
+      <div class="product-desc">Ces appareils gèrent le flux de données, permettant aux appareils du réseau de communiquer entre eux et d'accéder aux ressources d'Internet. Ils peuvent également assurer la sécurité du réseau en bloquant les connexions indésirables</div>
+    </div>
+    </div>
+
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/243829353222" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+<!-- Footer -->
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/glssmarthome/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/gls.smarthome2022?igsh=MXNqanE3dXJ3MHd0Mw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@gls_smarthome?_t=ZP-8yZezytj5Li&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <h5>&copy; 2025 par GLS SMARTHOME Tous droits réservés.</h5>
+</footer>
+
+
+  <!-- Sidebar Toggle Script -->
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.getElementById('hamburgerBtn');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+
+    // Optional: click outside sidebar to close (for mobile UX)
+    window.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+        sidebar.classList.remove('open');
+      }
+    });
+  </script>
+
+</body>
+</html>
