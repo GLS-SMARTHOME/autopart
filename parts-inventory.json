@@ -1,69 +1,212 @@
 {
-  "hyundai": {
-    "santa-fe": {
-      "2015": [
-        { "id": "HY-SF15-01", "name": "Front Ceramic Brake Pad Set", "brand": "Akebono", "price": "64.95", "image": "https://imgur.com" },
-        { "id": "HY-SF15-02", "name": "Heavy Duty Alternator Assembly", "brand": "Valeo", "price": "189.99", "image": "https://imgur.com" }
-      ],
-      "2016": [
-        { "id": "HY-SF16-01", "name": "Premium Engine Oil Filter", "brand": "Wix", "price": "12.50", "image": "https://imgur.com" }
-      ]
+  "parts_catalog": {
+    "BRK-CER-10": {
+      "name": "Front Premium Ceramic Brake Pad Set",
+      "brand": "Akebono",
+      "price": "64.95",
+      "image": "https://imgur.com"
     },
-    "tucson": {
-      "2017": [
-        { "id": "HY-TU17-01", "name": "Laser Iridium Spark Plugs (Pack of 4)", "brand": "NGK", "price": "45.00", "image": "https://imgur.com" }
-      ]
+    "ALT-HD-12": {
+      "name": "Heavy Duty 130A Alternator Assembly",
+      "brand": "Valeo",
+      "price": "189.99",
+      "image": "https://imgur.com"
     },
-    "sonata": {
-      "2015": [
-        { "id": "HY-SO15-01", "name": "High Pressure Fuel Pump Assembly", "brand": "Genuine Hyundai", "price": "210.00", "image": "https://imgur.com" }
-      ]
+    "OIL-WIX-01": {
+      "name": "Pro-Guard Engine Oil Filter",
+      "brand": "Wix",
+      "price": "12.50",
+      "image": "https://imgur.com"
+    },
+    "SPK-IR-04": {
+      "name": "Laser Iridium Spark Plugs (Pack of 4)",
+      "brand": "NGK",
+      "price": "45.00",
+      "image": "https://imgur.com"
+    },
+    "ROT-BRM-02": {
+      "name": "Front Performance Brake Rotors (Pair)",
+      "brand": "Brembo",
+      "price": "115.00",
+      "image": "https://imgur.com"
+    },
+    "COIL-DEN-09": {
+      "name": "Direct Ignition Coil Pack",
+      "brand": "Denso",
+      "price": "42.00",
+      "image": "https://imgur.com"
+    },
+    "CAB-BOS-07": {
+      "name": "Premium Carbon Cabin Air Filter",
+      "brand": "Bosch Workshop",
+      "price": "18.75",
+      "image": "https://imgur.com"
+    },
+    "O2S-DEN-03": {
+      "name": "Upstream Oxygen Sensor",
+      "brand": "Denso",
+      "price": "89.25",
+      "image": "https://imgur.com"
+    },
+    "MB-ACT-88": {
+      "name": "Transmission Shift Actuator Motor",
+      "brand": "OES Replacement",
+      "price": "349.00",
+      "image": "https://freepnglogos.com"
+    },
+    "MB-AIR-99": {
+      "name": "Air Suspension Compressor Pump",
+      "brand": "Arnott",
+      "price": "285.00",
+      "image": "https://freepnglogos.com"
+    },
+    "MB-SAM-11": {
+      "name": "Rear Signal Acquisition Module (SAM)",
+      "brand": "Genuine Mercedes",
+      "price": "415.00",
+      "image": "https://freepnglogos.com"
     }
   },
-  "kia": {
-    "sorento": {
-      "2016": [
-        { "id": "KIA-SR16-01", "name": "Rear Gas-Charged Shock Absorber", "brand": "KYB Excel-G", "price": "74.50", "image": "https://imgur.com" }
-      ]
+  "vehicles": {
+    "hyundai": {
+      "santa-fe": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "OIL-WIX-01"],
+        "2012": ["BRK-CER-10", "OIL-WIX-01", "SPK-IR-04"],
+        "2013": ["BRK-CER-10", "ALT-HD-12"],
+        "2014": ["BRK-CER-10", "ALT-HD-12", "CAB-BOS-07"],
+        "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02"],
+        "2016": ["BRK-CER-10", "OIL-WIX-01", "ROT-BRM-02"],
+        "2017": ["BRK-CER-10", "SPK-IR-04", "COIL-DEN-09"],
+        "2018": ["BRK-CER-10", "COIL-DEN-09", "CAB-BOS-07"],
+        "2019": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03"]
+      },
+      "tucson": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "OIL-WIX-01"],
+        "2012": ["BRK-CER-10", "SPK-IR-04"],
+        "2013": ["BRK-CER-10", "COIL-DEN-09"],
+        "2014": ["BRK-CER-10", "CAB-BOS-07"],
+        "2015": ["BRK-CER-10", "OIL-WIX-01"],
+        "2016": ["BRK-CER-10", "SPK-IR-04"],
+        "2017": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03"],
+        "2018": ["BRK-CER-10", "ROT-BRM-02", "CAB-BOS-07"],
+        "2019": ["BRK-CER-10", "ALT-HD-12", "COIL-DEN-09"]
+      },
+      "sonata": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "CAB-BOS-07"],
+        "2014": ["BRK-CER-10", "ROT-BRM-02"],
+        "2015": ["BRK-CER-10", "SPK-IR-04", "ALT-HD-12"],
+        "2016": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03"],
+        "2017": ["BRK-CER-10", "OIL-WIX-01", "CAB-BOS-07"],
+        "2018": ["BRK-CER-10", "COIL-DEN-09"],
+        "2019": ["BRK-CER-10", "ROT-BRM-02"]
+      }
     },
-    "sportage": {
-      "2014": [
-        { "id": "KIA-SP14-01", "name": "Front Performance Brake Rotors (Pair)", "brand": "Brembo", "price": "115.00", "image": "https://imgur.com" }
-      ]
-    }
-  },
-  "toyota": {
-    "rav4": {
-      "2015": [
-        { "id": "TOY-RV15-01", "name": "Upstream Oxygen Sensor", "brand": "Denso", "price": "89.25", "image": "https://imgur.com" }
-      ]
+    "kia": {
+      "sorento": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "ALT-HD-12"],
+        "2014": ["BRK-CER-10", "CAB-BOS-07"],
+        "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02"],
+        "2016": ["BRK-CER-10", "SPK-IR-04", "O2S-DEN-03"],
+        "2017": ["BRK-CER-10", "ROT-BRM-02"],
+        "2018": ["BRK-CER-10", "OIL-WIX-01", "CAB-BOS-07"],
+        "2019": ["BRK-CER-10", "COIL-DEN-09", "ROT-BRM-02"]
+      },
+      "sportage": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "CAB-BOS-07"],
+        "2014": ["BRK-CER-10", "ROT-BRM-02"],
+        "2015": ["BRK-CER-10", "OIL-WIX-01", "SPK-IR-04"],
+        "2016": ["BRK-CER-10", "ROT-BRM-02"],
+        "2017": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03"],
+        "2018": ["BRK-CER-10", "CAB-BOS-07"],
+        "2019": ["BRK-CER-10", "COIL-DEN-09"]
+      }
     },
-    "corolla": {
-      "2014": [
-        { "id": "TOY-CO14-01", "name": "Engine Ignition Coil Pack", "brand": "Denso", "price": "42.00", "image": "https://imgur.com" }
-      ]
+    "toyota": {
+      "rav4": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "O2S-DEN-03"],
+        "2014": ["BRK-CER-10", "CAB-BOS-07"],
+        "2015": ["BRK-CER-10", "OIL-WIX-01", "SPK-IR-04"],
+        "2016": ["BRK-CER-10", "ROT-BRM-02"],
+        "2017": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03"],
+        "2018": ["BRK-CER-10", "CAB-BOS-07"],
+        "2019": ["BRK-CER-10", "COIL-DEN-09", "ROT-BRM-02"]
+      },
+      "corolla": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "CAB-BOS-07"],
+        "2014": ["BRK-CER-10", "SPK-IR-04"],
+        "2015": ["BRK-CER-10", "OIL-WIX-01", "ROT-BRM-02"],
+        "2016": ["BRK-CER-10", "ALT-HD-12"],
+        "2017": ["BRK-CER-10", "O2S-DEN-03", "CAB-BOS-07"],
+        "2018": ["BRK-CER-10", "COIL-DEN-09"],
+        "2019": ["BRK-CER-10", "ROT-BRM-02"]
+      },
+      "camry": {
+        "2010": ["BRK-CER-10", "OIL-WIX-01"],
+        "2011": ["BRK-CER-10", "SPK-IR-04"],
+        "2012": ["BRK-CER-10", "COIL-DEN-09"],
+        "2013": ["BRK-CER-10", "CAB-BOS-07"],
+        "2014": ["BRK-CER-10", "ROT-BRM-02"],
+        "2015": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03"],
+        "2016": ["BRK-CER-10", "ROT-SET-05", "SPK-IR-04"],
+        "2017": ["BRK-CER-10", "OIL-WIX-01", "CAB-BOS-07"],
+        "2018": ["BRK-CER-10", "COIL-DEN-09"],
+        "2019": ["BRK-CER-10", "ROT-BRM-02"]
+      }
     },
-    "camry": {
-      "2016": [
-        { "id": "TOY-CA16-01", "name": "Premium Carbon Cabin Air Filter", "brand": "Bosch Workshop", "price": "18.75", "image": "https://imgur.com" }
-      ]
-    }
-  },
-  "mercedes": {
-    "sprinter": {
-      "2015": [
-        { "id": "MB-SP15-01", "name": "Transmission Shift Actuator Motor", "brand": "OES Replacement", "price": "349.00", "image": "https://freepnglogos.com" }
-      ]
-    },
-    "m-class": {
-      "2012": [
-        { "id": "MB-MC12-01", "name": "Air Suspension Compressor Pump", "brand": "Arnott", "price": "285.00", "image": "https://freepnglogos.com" }
-      ]
-    },
-    "gl-class": {
-      "2014": [
-        { "id": "MB-GL14-01", "name": "Rear Signal Acquisition Module (SAM)", "brand": "Genuine Mercedes", "price": "415.00", "image": "https://freepnglogos.com" }
-      ]
+    "mercedes": {
+      "sprinter": {
+        "2010": ["MB-ACT-88", "OIL-WIX-01"],
+        "2011": ["MB-ACT-88", "SPK-IR-04"],
+        "2012": ["MB-ACT-88", "ALT-HD-12"],
+        "2013": ["MB-ACT-88", "BRK-CER-10"],
+        "2014": ["MB-ACT-88", "CAB-BOS-07"],
+        "2015": ["MB-ACT-88", "ALT-HD-12", "ROT-BRM-02"],
+        "2016": ["MB-ACT-88", "SPK-IR-04"],
+        "2017": ["MB-ACT-88", "ROT-BRM-02", "CAB-BOS-07"],
+        "2018": ["MB-ACT-88", "OIL-WIX-01"],
+        "2019": ["MB-ACT-88", "BRK-CER-10", "ROT-BRM-02"]
+      },
+      "m-class": {
+        "2010": ["MB-AIR-99", "OIL-WIX-01"],
+        "2011": ["MB-AIR-99", "SPK-IR-04"],
+        "2012": ["MB-AIR-99", "BRK-CER-10"],
+        "2013": ["MB-AIR-99", "CAB-BOS-07"],
+        "2014": ["MB-AIR-99", "ROT-BRM-02"],
+        "2015": ["MB-AIR-99", "ALT-HD-12"],
+        "2016": ["MB-AIR-99", "SPK-IR-04", "O2S-DEN-03"],
+        "2017": ["MB-AIR-99", "ROT-BRM-02"],
+        "2018": ["MB-AIR-99", "CAB-BOS-07"],
+        "2019": ["MB-AIR-99", "OIL-WIX-01", "COIL-DEN-09"]
+      },
+      "gl-class": {
+        "2010": ["MB-SAM-11", "OIL-WIX-01"],
+        "2011": ["MB-SAM-11", "SPK-IR-04"],
+        "2012": ["MB-SAM-11", "BRK-CER-10"],
+        "2013": ["MB-SAM-11", "CAB-BOS-07"],
+        "2014": ["MB-SAM-11", "ROT-BRM-02"],
+        "2015": ["MB-SAM-11", "ALT-HD-12"],
+        "2016": ["MB-SAM-11", "SPK-IR-04"],
+        "2017": ["MB-SAM-11", "ROT-BRM-02", "O2S-DEN-03"],
+        "2018": ["MB-SAM-11", "CAB-BOS-07"],
+        "2019": ["MB-SAM-11", "OIL-WIX-01", "COIL-DEN-09"]
+      }
     }
   }
 }
