@@ -2,194 +2,194 @@
   "parts_catalog": {
   
     "AC-COMP-TY-08A": {
-      "name": "A/C Compressor Assembly (2.5L Engine, 6SEU16C Style)",
+      "name": "A/C Compresseur (2.5L, 6SEU16C Style)",
       "brand": "Denso OEM",
       "price": "285.00",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08B": {
-      "name": "A/C Compressor Assembly (2.5L Engine, TSE17C Style)",
+      "name": "A/C Compresseur (2.5L, TSE17C Style)",
       "brand": "Denso OEM",
       "price": "289.50",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08C": {
-      "name": "A/C Compressor Assembly (1.8L Engine, 6SEU14C Style)",
+      "name": "A/C Compresseur (1.8L, 6SEU14C Style)",
       "brand": "Denso OEM",
       "price": "278.50",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08D": {
-      "name": "A/C Compressor Assembly (1.8L Engine, SCSA06C Style)",
+      "name": "A/C Compresseur (1.8L, SCSA06C Style)",
       "brand": "Denso OEM",
       "price": "265.00",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08E": {
-      "name": "A/C Compressor Assembly (2.5L Engine, Dynamic Force Style)",
+      "name": "A/C Compresseur (2.5L, Dynamic Force Style)",
       "brand": "Denso OEM",
       "price": "315.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14A": {
-      "name": "Premium 100A Alternator Assembly (2.5L Engine)",
+      "name": "Alternateur 100A (2.5L)",
       "brand": "Denso",
       "price": "165.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14B": {
-      "name": "Standard 100A Alternator Assembly (1.8L Engine)",
+      "name": "Alternateur 100A (1.8L Engine)",
       "brand": "Denso",
       "price": "145.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14C": {
-      "name": "High-Output 130A Alternator Assembly (TNGA Platform)",
+      "name": "Alternateur 130A (TNGA Platform)",
       "brand": "Denso",
       "price": "195.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14D": {
-      "name": "Premium 100A Alternator Assembly (1.8L Engine Internal Reg)",
+      "name": "Alternateur 100A (1.8L Engine Internal Reg)",
       "brand": "Denso",
       "price": "158.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14E": {
-      "name": "Heavy Duty 130A Alternator Assembly (RAV4 Layout)",
+      "name": "Alternateur 130A (RAV4 Layout)",
       "brand": "Denso",
       "price": "185.00",
       "image": "https://imgur.com"
     },
     "STR-TY-31A": {
-      "name": "Starter Motor Assembly (2.5L Engine, 1.2kW)",
+      "name": "Démarreur (2.5L Engine, 1.2kW)",
       "brand": "Denso OEM",
       "price": "118.00",
       "image": "https://imgur.com"
     },
     "STR-TY-31B": {
-      "name": "Starter Motor Assembly (1.8L Engine Block Layout)",
+      "name": "Démarreur (1.8L Engine Block Layout)",
       "brand": "Denso OEM",
       "price": "112.50",
       "image": "https://imgur.com"
     },
     "STR-TY-31C": {
-      "name": "Starter Motor Assembly (Coaxial Planetary Design, TNGA)",
+      "name": "Démarreur(Coaxial Planetary Design, TNGA)",
       "brand": "Denso OEM",
       "price": "129.00",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02A": {
-      "name": "Front Wheel Bearing & Hub Unit (Camry 2.5L)",
+      "name": "Roulement de roue(Camry 2.5L)",
       "brand": "Koyo",
       "price": "62.40",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02B": {
-      "name": "Front Wheel Bearing Unit (4-Bolt Flange 1.8L)",
+      "name": "Roulement de roue (4-Bolt Flange 1.8L)",
       "brand": "Koyo",
       "price": "54.00",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02C": {
-      "name": "Front Wheel Bearing Unit (RAV4 Heavy Duty Hub)",
+      "name": "Roulement de roue (RAV4 Heavy Duty Hub)",
       "brand": "Koyo",
       "price": "68.50",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02D": {
-      "name": "Front Wheel Bearing Unit (TNGA Chassis Platform)",
+      "name": "Roulement de roue (TNGA Chassis Platform)",
       "brand": "Koyo",
       "price": "74.00",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02E": {
-      "name": "Front Wheel Bearing & Hub Assembly (Gen 11 1.8L)",
+      "name": "Roulement de roue (Gen 11 1.8L)",
       "brand": "Koyo",
       "price": "59.95",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02F": {
-      "name": "Front Wheel Bearing & Hub Unit (4WD/2WD RAV4 Layout)",
+      "name": "Roulement de roue (4WD/2WD RAV4 Layout)",
       "brand": "Koyo",
       "price": "72.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11A": {
-      "name": "Front Excel-G Strut Assembly Pair (Camry 2010-2011)",
+      "name": "Roulement de roue (Camry 2010-2011)",
       "brand": "KYB",
       "price": "198.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11B": {
-      "name": "Front Excel-G Strut Assembly Pair (Camry 2012-2014)",
+      "name": "Roulement de roue (Camry 2012-2014)",
       "brand": "KYB",
       "price": "205.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11C": {
-      "name": "Front Excel-G Strut Assembly Pair (Camry 2015-2017)",
+      "name": "Roulement de roue (Camry 2015-2017)",
       "brand": "KYB",
       "price": "210.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11D": {
-      "name": "Front Left/Right Loaded Strut Set (10th Gen Corolla)",
+      "name": "Roulement de roue (10th Gen Corolla)",
       "brand": "KYB",
       "price": "185.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11E": {
-      "name": "Front Excel-G Loaded Strut Assembly Pair (11th Gen Corolla)",
+      "name": "Roulement de roue (11th Gen Corolla)",
       "brand": "KYB",
       "price": "194.50",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11F": {
-      "name": "Front Excel-G Strut Assembly Pair (RAV4 2010-2012)",
+      "name": "Roulement de roue (RAV4 2010-2012)",
       "brand": "KYB",
       "price": "215.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11G": {
-      "name": "Front Excel-G Strut Assembly Pair (Camry 2018-2019)",
+      "name": "Roulement de roue (Camry 2018-2019)",
       "brand": "KYB",
       "price": "229.00",
       "image": "https://imgur.com"
     },
     "STRUT-TY-11H": {
-      "name": "Front Excel-G Strut Assembly Pair (RAV4 2013-2019)",
+      "name": "Roulement de roue(RAV4 2013-2019)",
       "brand": "KYB",
       "price": "224.00",
       "image": "https://imgur.com"
     },
 
     "AC-COMP-1012-24": {
-      "name": "A/C Compressor Assembly (2.4L Engine)",
+      "name": "A/C Compresseur(2.4L Engine)",
       "brand": "Halla OEM",
       "price": "225.00",
       "image": "https://imgur.com/WJHYxSc.jpg"
     },
     "AC-COMP-1318-24": {
-      "name": "DV16 A/C Compressor Assembly (2.4L Engine)",
+      "name": " A/C Compresseur DV16(2.4L Engine)",
       "brand": "Doowon OEM",
       "price": "245.00",
       "image": "https://imgur.com/R6a1FUp.jpg"
     },
     "ALT-HD-12": {
-      "name": "Heavy Duty 130A Alternator Assembly",
+      "name": "Alternateur 130A",
       "brand": "Valeo",
       "price": "189.99",
       "image": "https://imgur.com/undefined.jpg"
     },
     "STR-OEM-24": {
-      "name": "Starter Motor Assembly (2.4L Engine)",
+      "name": "Démarreur (2.4L Engine)",
       "brand": "Valeo OEM",
       "price": "135.50",
       "image": "https://imgur.com"
     },
     "STR-TY-31": {
-      "name": "Starter Motor Assembly (0.8kW / 1.2kW)",
+      "name": "Démarreur(0.8kW / 1.2kW)",
       "brand": "Denso OEM",
       "price": "118.00",
       "image": "https://imgur.com"
