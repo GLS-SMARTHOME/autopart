@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vehicle Parts Portal</title>
+    <!-- FontAwesome UI Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-dark: #121824;
+            --accent-red: #e74c3c;
+            --surface-bg: #f8fafc;
+            --border-muted: #cbd5e1;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--surface-bg);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        /* Top Header Component */
+        header {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .header-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-logo span {
+            color: var(--accent-red);
+        }
+
+        /* Step-By-Step Selector Block */
+        .search-engine-panel {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .panel-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .panel-container h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        /* 1. MAKE ICON GRID SELECTION (Optimized 4-Column Responsive Layout) */
+        .make-icon-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.75rem 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-height: 90px;
+        }
+
+        /* High-Definition Graphic Asset Scaling */
+        .brand-emblem-img {
+            width: auto;
+            max-width: 100%;
+            height: 32px;
+            object-fit: contain;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            opacity: 0.8;
+        }
+
+        .icon-card span {
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #cbd5e1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .icon-card:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .icon-card:hover .brand-emblem-img {
+            opacity: 1;
+            transform: scale(1.03);
+        }
+
+        .icon-card.selected-make {
+            background-color: rgba(231, 76, 60, 0.15);
+            border-color: var(--accent-red);
+            box-shadow: 0 0 12px rgba(231, 76, 60, 0.3);
+        }
+
+        .icon-card.selected-make .brand-emblem-img {
+            opacity: 1;
+        }
+
+        .icon-card.selected-make span {
+            color: #ffffff;
+        }
+
+        /* NESTED SEQUENTIAL SELECTORS */
+        .dropdown-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .input-stack {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .input-stack label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+            color: #94a3b8;
+            margin-bottom: 0.35rem;
+        }
+
+        .input-stack select {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-muted);
+            background-color: #ffffff;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+        }
+
+        .input-stack select:disabled {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #475569;
+            border-color: rgba(255, 255, 255, 0.02);
+            cursor: not-allowed;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='none' stroke='%231e293b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        }
+
+        .action-submit-btn {
+            background-color: var(--accent-red);
+            color: #ffffff;
+            border: none;
+            width: 100%;
+            padding: 0.95rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(231, 76, 60, 0.2);
+            transition: all 0.2s;
+        }
+
+        /* Results Catalog Grid UI */
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .catalog-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            border-left: 4px solid var(--accent-red);
+            padding-left: 0.5rem;
+        }
+
+        .parts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .part-node {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part-preview-box {
+            height: 130px;
+            background-color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 2.5rem;
+        }
+
+        .part-body {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .part-meta-tag {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-red);
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .part-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .part-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background-color: #f1f5f9;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            align-self: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .part-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .part-price-tag {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .cart-icon-btn {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+       /* Floating Contact Action */
+        .whatsapp-float-btn {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: #25d366;
+            color: white;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            text-decoration: none;
+            z-index: 999;
+        }
+
+        /* Responsive Breakpoints */
+        @media (min-width: 640px) {
+            .make-icon-row { gap: 1rem; }
+            .icon-card { padding: 1.25rem 1rem; min-height: 110px; }
+            .brand-emblem-img { height: 38px; }
+            .dropdown-row { grid-template-columns: repeat(3, 1fr); }
+            .panel-container h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-wrap">
+            <a href="#" class="brand-logo"><i class="fa-solid fa-gears"></i>DUMAK<span>PARTS</span></a>
+            <div><i class="fa-solid fa-basket-shopping" style="font-size: 1.25rem; cursor: pointer;"></i></div>
+        </div>
+    </header>
+
+    <section class="search-engine-panel">
+        <div class="panel-container">
+            <h2>Select Vehicle Manufacturer</h2>
+            
+            <div class="make-icon-row" id="makeIconContainer">
+                <div class="icon-card" data-make-key="hyundai">
+                    <img src="https://imgur.com/3yDlPaK.jpg" alt="Hyundai Genuine Parts" class="brand-emblem-img">
+                    <span>Hyundai</span>
+                </div>
+                <div class="icon-card" data-make-key="kia">
+                    <img src="https://imgur.com/w5wiMOc.jpg" alt="Kia Genuine Parts" class="brand-emblem-img">
+                    <span>Kia</span>
+                </div>
+                <div class="icon-card" data-make-key="toyota">
+                    <img src="https://imgur.com/bqS5o7C.jpg" alt="Toyota Genuine Parts" class="brand-emblem-img">
+                    <span>Toyota</span>
+                </div>
+                <div class="icon-card" data-make-key="mercedes">
+                    <img src="https://imgur.com/j0SceaD.jpg" alt="Mercedes-Benz Genuine Parts" class="brand-emblem-img" style="filter: invert(1);">
+                    <span>Mercedes</span>
+                </div>
+            </div>
+
+            <div class="dropdown-row">
+                <div class="input-stack">
+                    <label for="modelSelect">Step 2: Model</label>
+                    <select id="modelSelect" disabled>
+                        <option value="">-- Choose Model --</option>
+                    </select>
+                </div>
+
+                <div class="input-stack">
+                    <label for="yearSelect">Step 3: Year</label>
+                    <select id="yearSelect" disabled>
+                        <option value="">-- Choose Year --</option>
+                    </select>
+                </div>
+
+                <div class="input-stack">
+                    <label for="partSelect">Step 4: Component</label>
+                    <select id="partSelect" disabled>
+                        <option value="">-- Choose Part --</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="action-submit-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i> Query Inventory Stock
+            </button>
+        </div>
+    </section>
+
+    <main>
+        <h3 class="catalog-header" id="catalogTitle">Featured Stock Inquiries</h3>
+        <div class="parts-grid" id="catalogGrid">
+            <div class="part-node">
+                <div class="part-preview-box"><i class="fa-solid fa-car-battery"></i></div>
+                <div class="part-body">
+                    <span class="part-meta-tag">Bosch OEM</span>
+                    <div class="part-title">Premium Silver AGM Cell</div>
+                    <span class="part-badge">Universal Layout compatibility</span>
+                    <div class="part-footer">
+                        <span class="part-price-tag">$189.50</span>
+                        <button class="cart-icon-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://wa.me" class="whatsapp-float-btn" target="_blank" title="Chat with a Specialist">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Data Structure Layer
+        const dbVehicleTree = {
+            hyundai: {
+                models: {
+                    "santa-fe": { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Brake Pads", "Alternator", "Oil Filter", "Ignition Coil", "Cabin Filter"] 
+                    },
+                    tucson: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Spark Plugs", "Brake Rotors", "Air Filter", "Oxygen Sensor", "CV Axle"] 
+                    },
+                    sonata: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Fuel Pump", "Serpentine Belt", "Water Pump", "Starter Motor", "Brake Pads"] 
+                    }
+                }
+            },
+            kia: {
+                models: {
+                    sorento: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Shock Absorbers", "Alternator", "Oil Filter", "Brake Rotors", "Spark Plugs"] 
+                    },
+                    sportage: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Brake Pads", "Air Filter", "Ignition Coil", "Cabin Filter", "Wheel Hub"] 
+                    }
+                }
+            },
+            toyota: {
+                models: {
+                    rav4: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Brake Pads", "Oxygen Sensor", "Oil Filter", "Spark Plugs", "Serpentine Belt"] 
+                    },
+                    corolla: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Alternator", "Brake Rotors", "Air Filter", "Ignition Coil", "Water Pump"] 
+                    },
+                    camry: { 
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
+                        parts: ["Fuel Pump", "Cabin Filter", "Starter Motor", "Brake Pads", "CV Axle"] 
+                    }
+                }
+            },
+            mercedes: {
+                models: {
+                    sprinter: {
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                        parts: ["Transmission Actuator", "Fuel Injectors", "Brake Rotors", "Alternator", "ABS Speed Sensor"]
+                    },
+                    "m-class": {
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                        parts: ["Air Suspension Compressor", "Spark Plugs", "Oil Filter", "Brake Pads", "Steering Lock Motor"]
+                    },
+                    "gl-class": {
+                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                        parts: ["SAM Control Module", "Nitrogen Oxide Sensor", "Cabin Filter", "Ignition Coil pack", "Wheel Hub Assembly"]
+                    }
+                }
+            }
+        };
+
+        // Execution State Tracker
+        let activeSelectedMake = "";
+
+        // UI Element Binding Reference Hooks
+        const makeCards = document.querySelectorAll('.icon-card');
+        const modelSelect = document.getElementById('modelSelect');
+        const yearSelect = document.getElementById('yearSelect');
+        const partSelect = document.getElementById('partSelect');
+        const searchBtn = document.getElementById('searchBtn');
+        const catalogTitle = document.getElementById('catalogTitle');
+        const catalogGrid = document.getElementById('catalogGrid');
+
+               // Step 1: Handle Visual Brand Grid Click Selections
+        makeCards.forEach(card => {
+            card.addEventListener('click', function() {
+                makeCards.forEach(c => c.classList.remove('selected-make'));
+                this.classList.add('selected-make');
+                
+                activeSelectedMake = this.getAttribute('data-make-key');
+                
+                // Clear cascading sub-menus cleanly
+                flushAndKillDropdown(modelSelect, "-- Choose Model --");
+                flushAndKillDropdown(yearSelect, "-- Choose Year --");
+                flushAndKillDropdown(partSelect, "-- Choose Part --");
+
+                if (activeSelectedMake && dbVehicleTree[activeSelectedMake]) {
+                    const models = Object.keys(dbVehicleTree[activeSelectedMake].models);
+                    models.forEach(model => {
+                        const opt = document.createElement('option');
+                        opt.value = model;
+                        
+                        // Human-friendly model labels transformation
+                        const labelText = model.split('-')
+                                               .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                                               .join(' ');
+                        opt.textContent = labelText;
+                        modelSelect.appendChild(opt);
+                    });
+                    modelSelect.disabled = false;
+                }
+            });
+        });
+
+        // Step 2: Handle Model Dropdown Change
+        modelSelect.addEventListener('change', function() {
+            flushAndKillDropdown(yearSelect, "-- Choose Year --");
+            flushAndKillDropdown(partSelect, "-- Choose Part --");
+
+            const selectedModel = this.value;
+            if (selectedModel && dbVehicleTree[activeSelectedMake].models[selectedModel]) {
+                const nodeMetadata = dbVehicleTree[activeSelectedMake].models[selectedModel];
+                nodeMetadata.years.forEach(year => {
+                    const opt = document.createElement('option');
+                    opt.value = year;
+                    opt.textContent = year;
+                    yearSelect.appendChild(opt);
+                });
+                yearSelect.disabled = false;
+            }
+        });
+
+        // Step 3: Handle Year Dropdown Change
+        yearSelect.addEventListener('change', function() {
+            flushAndKillDropdown(partSelect, "-- Choose Part --");
+            const selectedModel = modelSelect.value;
+
+            if (this.value && dbVehicleTree[activeSelectedMake].models[selectedModel]) {
+                const partsArray = dbVehicleTree[activeSelectedMake].models[selectedModel].parts;
+                partsArray.forEach(part => {
+                    const opt = document.createElement('option');
+                    opt.value = part.toLowerCase().replace(/\s+/g, '-');
+                    opt.textContent = part;
+                    partSelect.appendChild(opt);
+                });
+                partSelect.disabled = false;
+            }
+        });
+
+        // Dynamic State Reset Helper
+        function flushAndKillDropdown(targetSelectorElement, placementStringText) {
+            targetSelectorElement.innerHTML = `<option value="">${placementStringText}</option>`;
+            targetSelectorElement.disabled = true;
+        }
+
+        // Form Trigger: Query stock configuration match
+        searchBtn.addEventListener('click', function() {
+            if(!activeSelectedMake || !modelSelect.value || !yearSelect.value || !partSelect.value) {
+                alert("Sequence verification failed. Please select a Make brand icon and specify all options before firing lookup query.");
+                return;
+            }
+
+            const cleanMakeText = activeSelectedMake.toUpperCase();
+            const cleanModelText = modelSelect.options[modelSelect.selectedIndex].text;
+            const cleanYearText = yearSelect.value;
+            const cleanPartText = partSelect.options[partSelect.selectedIndex].text;
+
+            catalogTitle.textContent = `Matching Results For: ${cleanYearText} ${cleanMakeText} ${cleanModelText}`;
+            
+            // Inject perfect query item node directly into display grid
+            catalogGrid.innerHTML = `
+                <div class="part-node" style="border-color: var(--accent-red);">
+                    <div class="part-preview-box" style="color: var(--accent-red);"><i class="fa-solid fa-gears"></i></div>
+                    <div class="part-body">
+                        <span class="part-meta-tag">Premium Certified Match</span>
+                        <div class="part-title">${cleanPartText} Kit</div>
+                        <span class="part-badge">${cleanYearText} ${cleanMakeText} ${cleanModelText} Fit Verified</span>
+                        <div class="part-footer">
+                            <span class="part-price-tag">$124.50</span>
+                            <button class="cart-icon-btn" style="background-color: var(--accent-red);"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
