@@ -256,13 +256,25 @@
         }
 
         .part-preview-box {
-            height: 130px;
-            background-color: #f1f5f9;
+            height: 160px;
+            background-color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #94a3b8;
-            font-size: 2.5rem;
+            overflow: hidden;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .part-product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .part-node:hover .part-product-img {
+            transform: scale(1.04);
         }
 
         .part-body {
@@ -327,7 +339,7 @@
             justify-content: center;
         }
 
-       /* Floating Contact Action */
+        /* Floating Contact Action */
         .whatsapp-float-btn {
             position: fixed;
             bottom: 1.5rem;
@@ -421,7 +433,9 @@
         <h3 class="catalog-header" id="catalogTitle">Featured Stock Inquiries</h3>
         <div class="parts-grid" id="catalogGrid">
             <div class="part-node">
-                <div class="part-preview-box"><i class="fa-solid fa-car-battery"></i></div>
+                <div class="part-preview-box">
+                    <i class="fa-solid fa-car-battery" style="font-size: 2.5rem; color: #94a3b8;"></i>
+                </div>
                 <div class="part-body">
                     <span class="part-meta-tag">Bosch OEM</span>
                     <div class="part-title">Premium Silver AGM Cell</div>
@@ -440,74 +454,11 @@
     </a>
 
     <script>
-        // Data Structure Layer
-        const dbVehicleTree = {
-            hyundai: {
-                models: {
-                    "santa-fe": { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Brake Pads", "Alternator", "Oil Filter", "Ignition Coil", "Cabin Filter"] 
-                    },
-                    tucson: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Spark Plugs", "Brake Rotors", "Air Filter", "Oxygen Sensor", "CV Axle"] 
-                    },
-                    sonata: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Fuel Pump", "Serpentine Belt", "Water Pump", "Starter Motor", "Brake Pads"] 
-                    }
-                }
-            },
-            kia: {
-                models: {
-                    sorento: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Shock Absorbers", "Alternator", "Oil Filter", "Brake Rotors", "Spark Plugs"] 
-                    },
-                    sportage: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Brake Pads", "Air Filter", "Ignition Coil", "Cabin Filter", "Wheel Hub"] 
-                    }
-                }
-            },
-            toyota: {
-                models: {
-                    rav4: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Brake Pads", "Oxygen Sensor", "Oil Filter", "Spark Plugs", "Serpentine Belt"] 
-                    },
-                    corolla: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Alternator", "Brake Rotors", "Air Filter", "Ignition Coil", "Water Pump"] 
-                    },
-                    camry: { 
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], 
-                        parts: ["Fuel Pump", "Cabin Filter", "Starter Motor", "Brake Pads", "CV Axle"] 
-                    }
-                }
-            },
-            mercedes: {
-                models: {
-                    sprinter: {
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
-                        parts: ["Transmission Actuator", "Fuel Injectors", "Brake Rotors", "Alternator", "ABS Speed Sensor"]
-                    },
-                    "m-class": {
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
-                        parts: ["Air Suspension Compressor", "Spark Plugs", "Oil Filter", "Brake Pads", "Steering Lock Motor"]
-                    },
-                    "gl-class": {
-                        years: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
-                        parts: ["SAM Control Module", "Nitrogen Oxide Sensor", "Cabin Filter", "Ignition Coil pack", "Wheel Hub Assembly"]
-                    }
-                }
-            }
-        };
-
-        // Execution State Tracker
+        // Global variables for live file stream data
+        let fullInventoryData = null;
         let activeSelectedMake = "";
 
-        // UI Element Binding Reference Hooks
+        // UI Hook elements mapping
         const makeCards = document.querySelectorAll('.icon-card');
         const modelSelect = document.getElementById('modelSelect');
         const yearSelect = document.getElementById('yearSelect');
@@ -516,7 +467,22 @@
         const catalogTitle = document.getElementById('catalogTitle');
         const catalogGrid = document.getElementById('catalogGrid');
 
-               // Step 1: Handle Visual Brand Grid Click Selections
+        // Automatic engine fetch cycle targeting external JSON file structure
+        async function loadInventoryDatabase() {
+            try {
+                // Fetch using a relative path pathing configuration match
+                const response = await fetch('parts-inventory.json');
+                fullInventoryData = await response.json();
+                console.log("External inventory loaded safely into memory.");
+            } catch (error) {
+                console.error("Critical error downloading database stream file:", error);
+            }
+        }
+
+        // Boot loader setup activation
+        loadInventoryDatabase();
+
+        // Step 1: Make grid selector interactions connected to structural layout array
         makeCards.forEach(card => {
             card.addEventListener('click', function() {
                 makeCards.forEach(c => c.classList.remove('selected-make'));
@@ -524,22 +490,16 @@
                 
                 activeSelectedMake = this.getAttribute('data-make-key');
                 
-                // Clear cascading sub-menus cleanly
                 flushAndKillDropdown(modelSelect, "-- Choose Model --");
                 flushAndKillDropdown(yearSelect, "-- Choose Year --");
                 flushAndKillDropdown(partSelect, "-- Choose Part --");
 
-                if (activeSelectedMake && dbVehicleTree[activeSelectedMake]) {
-                    const models = Object.keys(dbVehicleTree[activeSelectedMake].models);
+                if (fullInventoryData && fullInventoryData[activeSelectedMake]) {
+                    const models = Object.keys(fullInventoryData[activeSelectedMake]);
                     models.forEach(model => {
                         const opt = document.createElement('option');
                         opt.value = model;
-                        
-                        // Human-friendly model labels transformation
-                        const labelText = model.split('-')
-                                               .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                                               .join(' ');
-                        opt.textContent = labelText;
+                        opt.textContent = model.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                         modelSelect.appendChild(opt);
                     });
                     modelSelect.disabled = false;
@@ -547,15 +507,15 @@
             });
         });
 
-        // Step 2: Handle Model Dropdown Change
+        // Step 2: Handle Model drop-down changes cascading down values
         modelSelect.addEventListener('change', function() {
             flushAndKillDropdown(yearSelect, "-- Choose Year --");
             flushAndKillDropdown(partSelect, "-- Choose Part --");
 
             const selectedModel = this.value;
-            if (selectedModel && dbVehicleTree[activeSelectedMake].models[selectedModel]) {
-                const nodeMetadata = dbVehicleTree[activeSelectedMake].models[selectedModel];
-                nodeMetadata.years.forEach(year => {
+            if (selectedModel && fullInventoryData[activeSelectedMake][selectedModel]) {
+                const years = Object.keys(fullInventoryData[activeSelectedMake][selectedModel]);
+                years.forEach(year => {
                     const opt = document.createElement('option');
                     opt.value = year;
                     opt.textContent = year;
@@ -565,58 +525,66 @@
             }
         });
 
-        // Step 3: Handle Year Dropdown Change
+        // Step 3: Handle Year drop-down changes cascading down component entries
         yearSelect.addEventListener('change', function() {
             flushAndKillDropdown(partSelect, "-- Choose Part --");
             const selectedModel = modelSelect.value;
+            const selectedYear = this.value;
 
-            if (this.value && dbVehicleTree[activeSelectedMake].models[selectedModel]) {
-                const partsArray = dbVehicleTree[activeSelectedMake].models[selectedModel].parts;
-                partsArray.forEach(part => {
+            if (selectedYear && fullInventoryData[activeSelectedMake][selectedModel][selectedYear]) {
+                const partsArray = fullInventoryData[activeSelectedMake][selectedModel][selectedYear];
+                partsArray.forEach(partObj => {
                     const opt = document.createElement('option');
-                    opt.value = part.toLowerCase().replace(/\s+/g, '-');
-                    opt.textContent = part;
+                    opt.value = partObj.id; // Treat unique catalog reference ID as base input key
+                    opt.textContent = partObj.name;
                     partSelect.appendChild(opt);
                 });
                 partSelect.disabled = false;
             }
         });
 
-        // Dynamic State Reset Helper
         function flushAndKillDropdown(targetSelectorElement, placementStringText) {
             targetSelectorElement.innerHTML = `<option value="">${placementStringText}</option>`;
             targetSelectorElement.disabled = true;
         }
 
-        // Form Trigger: Query stock configuration match
+               // Form Trigger: Query catalog stock using targeted array map properties
         searchBtn.addEventListener('click', function() {
             if(!activeSelectedMake || !modelSelect.value || !yearSelect.value || !partSelect.value) {
                 alert("Sequence verification failed. Please select a Make brand icon and specify all options before firing lookup query.");
                 return;
             }
 
-            const cleanMakeText = activeSelectedMake.toUpperCase();
-            const cleanModelText = modelSelect.options[modelSelect.selectedIndex].text;
-            const cleanYearText = yearSelect.value;
-            const cleanPartText = partSelect.options[partSelect.selectedIndex].text;
+            const selectedModel = modelSelect.value;
+            const selectedYear = yearSelect.value;
+            const selectedPartId = partSelect.value;
 
-            catalogTitle.textContent = `Matching Results For: ${cleanYearText} ${cleanMakeText} ${cleanModelText}`;
-            
-            // Inject perfect query item node directly into display grid
-            catalogGrid.innerHTML = `
-                <div class="part-node" style="border-color: var(--accent-red);">
-                    <div class="part-preview-box" style="color: var(--accent-red);"><i class="fa-solid fa-gears"></i></div>
-                    <div class="part-body">
-                        <span class="part-meta-tag">Premium Certified Match</span>
-                        <div class="part-title">${cleanPartText} Kit</div>
-                        <span class="part-badge">${cleanYearText} ${cleanMakeText} ${cleanModelText} Fit Verified</span>
-                        <div class="part-footer">
-                            <span class="part-price-tag">$124.50</span>
-                            <button class="cart-icon-btn" style="background-color: var(--accent-red);"><i class="fa-solid fa-plus"></i></button>
+            const partsList = fullInventoryData[activeSelectedMake][selectedModel][selectedYear];
+            const matchingProduct = partsList.find(p => p.id === selectedPartId);
+
+            if (matchingProduct) {
+                const cleanMakeText = activeSelectedMake.toUpperCase();
+                const cleanModelText = modelSelect.options[modelSelect.selectedIndex].text;
+
+                catalogTitle.textContent = `Search Results for: ${selectedYear} ${cleanMakeText} ${cleanModelText}`;
+                
+                catalogGrid.innerHTML = `
+                    <div class="part-node" style="border-color: var(--accent-red);">
+                        <div class="part-preview-box">
+                            <img src="${matchingProduct.image}" alt="${matchingProduct.name}" class="part-product-img">
+                        </div>
+                        <div class="part-body">
+                            <span class="part-meta-tag">${matchingProduct.brand} Premium Genuine</span>
+                            <div class="part-title">${matchingProduct.name}</div>
+                            <span class="part-badge">Part #${matchingProduct.id} • Fit Verified</span>
+                            <div class="part-footer">
+                                <span class="part-price-tag">$${matchingProduct.price}</span>
+                                <button class="cart-icon-btn" style="background-color: var(--accent-red);"><i class="fa-solid fa-plus"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
+                `;
+            }
         });
     </script>
 </body>
