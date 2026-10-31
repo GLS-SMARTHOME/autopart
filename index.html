@@ -490,8 +490,8 @@
                 activeSelectedMake = this.getAttribute('data-make-key');
                 
                 flushAndKillDropdown(modelSelect, "-- Choose Model --");
-                flushAndKillDropdown(yearSelect, "-- Choose Year --");
-                flushAndKillDropdown(partSelect, "-- Choose Part --");
+                flushAndKillDropdown(yearSelect, "-- Choisir Année --");
+                flushAndKillDropdown(partSelect, "-- Choisir Pièces --");
 
                 if (fullInventoryData && fullInventoryData.vehicles[activeSelectedMake]) {
                     const models = Object.keys(fullInventoryData.vehicles[activeSelectedMake]);
@@ -508,8 +508,8 @@
 
         // Step 2: Handle Model dropdown adjustments
         modelSelect.addEventListener('change', function() {
-            flushAndKillDropdown(yearSelect, "-- Choose Year --");
-            flushAndKillDropdown(partSelect, "-- Choose Part --");
+            flushAndKillDropdown(yearSelect, "-- Choisir Année --");
+            flushAndKillDropdown(partSelect, "-- Choisir Pièces --");
 
             const selectedModel = this.value;
             if (selectedModel && fullInventoryData.vehicles[activeSelectedMake][selectedModel]) {
@@ -526,7 +526,7 @@
 
         // Step 3: Handle Year selection mapping to unique shared part catalog pointers
         yearSelect.addEventListener('change', function() {
-            flushAndKillDropdown(partSelect, "-- Choose Part --");
+            flushAndKillDropdown(partSelect, "-- Choisir Pièces --");
             const selectedModel = modelSelect.value;
             const selectedYear = this.value;
 
@@ -555,7 +555,7 @@
                // Form Trigger: Query catalog registry stock match using target cross reference maps
         searchBtn.addEventListener('click', function() {
             if(!activeSelectedMake || !modelSelect.value || !yearSelect.value || !partSelect.value) {
-                alert("Sequence verification failed. Please select a Make brand icon and specify all options before firing lookup query.");
+                alert("Veuillez sélectionner une icône de marque et préciser toutes les options avant de lancer la recherche.");
                 return;
             }
 
