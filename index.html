@@ -84,7 +84,7 @@
             letter-spacing: -0.5px;
         }
 
-        /* 1. MAKE ICON GRID SELECTION (Optimized 4-Column Responsive Layout) */
+        /* 1. MAKE ICON GRID SELECTION */
         .make-icon-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -339,7 +339,7 @@
             justify-content: center;
         }
 
-        /* Floating Contact Action */
+       /* Floating Contact Action */
         .whatsapp-float-btn {
             position: fixed;
             bottom: 1.5rem;
@@ -383,19 +383,19 @@
             
             <div class="make-icon-row" id="makeIconContainer">
                 <div class="icon-card" data-make-key="hyundai">
-                    <img src="https://imgur.com/3yDlPaK.jpg" alt="Hyundai Genuine Parts" class="brand-emblem-img">
+                    <img src="https://imgur.com" alt="Hyundai Genuine Parts" class="brand-emblem-img">
                     <span>Hyundai</span>
                 </div>
                 <div class="icon-card" data-make-key="kia">
-                    <img src="https://imgur.com/w5wiMOc.jpg" alt="Kia Genuine Parts" class="brand-emblem-img">
+                    <img src="https://imgur.com" alt="Kia Genuine Parts" class="brand-emblem-img">
                     <span>Kia</span>
                 </div>
                 <div class="icon-card" data-make-key="toyota">
-                    <img src="https://imgur.com/bqS5o7C.jpg" alt="Toyota Genuine Parts" class="brand-emblem-img">
+                    <img src="https://imgur.com" alt="Toyota Genuine Parts" class="brand-emblem-img">
                     <span>Toyota</span>
                 </div>
                 <div class="icon-card" data-make-key="mercedes">
-                    <img src="https://imgur.com/j0SceaD.jpg" alt="Mercedes-Benz Genuine Parts" class="brand-emblem-img" style="filter: invert(1);">
+                    <img src="https://freepnglogos.com" alt="Mercedes-Benz Genuine Parts" class="brand-emblem-img" style="filter: invert(1);">
                     <span>Mercedes</span>
                 </div>
             </div>
@@ -467,13 +467,12 @@
         const catalogTitle = document.getElementById('catalogTitle');
         const catalogGrid = document.getElementById('catalogGrid');
 
-        // Automatic engine fetch cycle targeting external JSON file structure
+        // Automatic engine fetch cycle targeting relational database schema file
         async function loadInventoryDatabase() {
             try {
-                // Fetch using a relative path pathing configuration match
                 const response = await fetch('parts-inventory.json');
                 fullInventoryData = await response.json();
-                console.log("External inventory loaded safely into memory.");
+                console.log("Relational interchange database loaded safely into memory.");
             } catch (error) {
                 console.error("Critical error downloading database stream file:", error);
             }
@@ -482,7 +481,7 @@
         // Boot loader setup activation
         loadInventoryDatabase();
 
-        // Step 1: Make grid selector interactions connected to structural layout array
+        // Step 1: Make grid selector interactions pulling from 'vehicles' tree layer
         makeCards.forEach(card => {
             card.addEventListener('click', function() {
                 makeCards.forEach(c => c.classList.remove('selected-make'));
@@ -494,8 +493,8 @@
                 flushAndKillDropdown(yearSelect, "-- Choose Year --");
                 flushAndKillDropdown(partSelect, "-- Choose Part --");
 
-                if (fullInventoryData && fullInventoryData[activeSelectedMake]) {
-                    const models = Object.keys(fullInventoryData[activeSelectedMake]);
+                if (fullInventoryData && fullInventoryData.vehicles[activeSelectedMake]) {
+                    const models = Object.keys(fullInventoryData.vehicles[activeSelectedMake]);
                     models.forEach(model => {
                         const opt = document.createElement('option');
                         opt.value = model;
@@ -507,14 +506,14 @@
             });
         });
 
-        // Step 2: Handle Model drop-down changes cascading down values
+        // Step 2: Handle Model dropdown adjustments
         modelSelect.addEventListener('change', function() {
             flushAndKillDropdown(yearSelect, "-- Choose Year --");
             flushAndKillDropdown(partSelect, "-- Choose Part --");
 
             const selectedModel = this.value;
-            if (selectedModel && fullInventoryData[activeSelectedMake][selectedModel]) {
-                const years = Object.keys(fullInventoryData[activeSelectedMake][selectedModel]);
+            if (selectedModel && fullInventoryData.vehicles[activeSelectedMake][selectedModel]) {
+                const years = Object.keys(fullInventoryData.vehicles[activeSelectedMake][selectedModel]);
                 years.forEach(year => {
                     const opt = document.createElement('option');
                     opt.value = year;
@@ -525,19 +524,24 @@
             }
         });
 
-        // Step 3: Handle Year drop-down changes cascading down component entries
+        // Step 3: Handle Year selection mapping to unique shared part catalog pointers
         yearSelect.addEventListener('change', function() {
             flushAndKillDropdown(partSelect, "-- Choose Part --");
             const selectedModel = modelSelect.value;
             const selectedYear = this.value;
 
-            if (selectedYear && fullInventoryData[activeSelectedMake][selectedModel][selectedYear]) {
-                const partsArray = fullInventoryData[activeSelectedMake][selectedModel][selectedYear];
-                partsArray.forEach(partObj => {
-                    const opt = document.createElement('option');
-                    opt.value = partObj.id; // Treat unique catalog reference ID as base input key
-                    opt.textContent = partObj.name;
-                    partSelect.appendChild(opt);
+            if (selectedYear && fullInventoryData.vehicles[activeSelectedMake][selectedModel][selectedYear]) {
+                const associatedPartIDs = fullInventoryData.vehicles[activeSelectedMake][selectedModel][selectedYear];
+                
+                associatedPartIDs.forEach(partID => {
+                    // Pull metadata parameters directly out of shared parts catalog registry directory matching key ID
+                    const partDetails = fullInventoryData.parts_catalog[partID];
+                    if (partDetails) {
+                        const opt = document.createElement('option');
+                        opt.value = partID; // Unique part ID SKU used as option value entry
+                        opt.textContent = partDetails.name;
+                        partSelect.appendChild(opt);
+                    }
                 });
                 partSelect.disabled = false;
             }
@@ -548,19 +552,18 @@
             targetSelectorElement.disabled = true;
         }
 
-               // Form Trigger: Query catalog stock using targeted array map properties
+               // Form Trigger: Query catalog registry stock match using target cross reference maps
         searchBtn.addEventListener('click', function() {
             if(!activeSelectedMake || !modelSelect.value || !yearSelect.value || !partSelect.value) {
                 alert("Sequence verification failed. Please select a Make brand icon and specify all options before firing lookup query.");
                 return;
             }
 
-            const selectedModel = modelSelect.value;
-            const selectedYear = yearSelect.value;
             const selectedPartId = partSelect.value;
+            const selectedYear = yearSelect.value;
 
-            const partsList = fullInventoryData[activeSelectedMake][selectedModel][selectedYear];
-            const matchingProduct = partsList.find(p => p.id === selectedPartId);
+            // Instantly look up shared metadata definition values inside parts catalog database map layout
+            const matchingProduct = fullInventoryData.parts_catalog[selectedPartId];
 
             if (matchingProduct) {
                 const cleanMakeText = activeSelectedMake.toUpperCase();
@@ -576,7 +579,7 @@
                         <div class="part-body">
                             <span class="part-meta-tag">${matchingProduct.brand} Premium Genuine</span>
                             <div class="part-title">${matchingProduct.name}</div>
-                            <span class="part-badge">Part #${matchingProduct.id} • Fit Verified</span>
+                            <span class="part-badge">Part #${selectedPartId} • Interchangeable Fit</span>
                             <div class="part-footer">
                                 <span class="part-price-tag">$${matchingProduct.price}</span>
                                 <button class="cart-icon-btn" style="background-color: var(--accent-red);"><i class="fa-solid fa-plus"></i></button>
