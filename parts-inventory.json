@@ -218,12 +218,6 @@
       "price": "198.00",
       "image": "https://imgur.com/STwO02V.jpg"
     },
-    "BRK-CER-10": {
-      "name": "Roulement de roue",
-      "brand": "Akebono",
-      "price": "64.95",
-      "image": "https://imgur.com/STwO02V.jpg"
-    },
     "SPK-IR-04": {
       "name": "Laser Iridium Spark Plugs (Pack of 4)",
       "brand": "NGK",
@@ -264,67 +258,70 @@
   "vehicles": {
     "hyundai": {
       "santa-fe": {
-        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2014": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2017": ["BRK-CER-10", "SPK-IR-04", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2019": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"]
+        "2010": ["AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2011": ["AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2012": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2013": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2014": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2015": ["ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2016": ["ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2017": ["SPK-IR-04", "COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["COIL-DEN-09", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2019": ["ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"]
       },
       "tucson": {
-        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2013": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2014": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2015": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
-        "2017": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2019": ["BRK-CER-10", "ALT-HD-12", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
+        "2010": ["AC-COMP-1012-24", "STR-OEM-24"],
+        "2011": ["AC-COMP-1012-24", "STR-OEM-24"],
+        "2012": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2013": ["COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2014": ["AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2015": ["OIL-WIX-01", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2016": ["AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
+        "2017": ["ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2019": ["ALT-HD-12", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       },
       "sonata": {
-        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2013": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2015": ["BRK-CER-10", "SPK-IR-04", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24"],
-        "2016": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2017": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2019": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
+        "2010": ["AC-COMP-1012-24", "STR-OEM-24"],
+        "2011": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2012": ["COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2013": ["AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2014": ["ROT-BRM-02", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2015": ["SPK-IR-04", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24"],
+        "2016": ["ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2017": ["AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2018": ["COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2019": ["ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       }
-    },
-    "kia": {
-      "sorento": {
-        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2014": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "SPK-IR-04", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2017": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2019": ["BRK-CER-10", "COIL-DEN-09", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
-      },
-      "sportage": {
-        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2013": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2015": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2016": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
-        "2017": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03", "AC-COMP-1318-24", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2019": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
-      }
+    }
+
+    "kia": {{
+  "sorento": {
+    "2010": ["AC-COMP-1012-24", "STR-OEM-24"],
+    "2011": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+    "2012": ["COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+    "2013": ["ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+    "2014": ["AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+    "2015": ["ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+    "2016": ["SPK-IR-04", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+    "2017": ["ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+    "2018": ["AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
+    "2019": ["COIL-DEN-09", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
+  },
+  "sportage": {
+    "2010": ["AC-COMP-1012-24", "STR-OEM-24"],
+    "2011": ["SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24"],
+    "2012": ["COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+    "2013": ["AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+    "2014": ["ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+    "2015": ["SPK-IR-04", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+    "2016": ["ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
+    "2017": ["ALT-HD-12", "O2S-DEN-03", "AC-COMP-1318-24", "STR-OEM-24"],
+    "2018": ["AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+    "2019": ["COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
+  }
+}
+
     },
     "toyota": {
       "camry": {
