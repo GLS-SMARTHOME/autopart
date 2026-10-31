@@ -282,9 +282,9 @@
   "vehicles": {
     "hyundai": {
       "santa-fe": {
-        "2010": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2011": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
-        "2012": ["BRK-CER-10", "OIL-WIX-01", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2014": ["BRK-CER-10", "ALT-HD-12", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
@@ -294,8 +294,8 @@
         "2019": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"]
       },
       "tucson": {
-        "2010": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24"],
-        "2011": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24"],
+        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
+        "2011": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2012": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2014": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
@@ -306,21 +306,21 @@
         "2019": ["BRK-CER-10", "ALT-HD-12", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       },
       "sonata": {
-        "2010": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24"],
+        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
         "2013": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1012-24", "STR-OEM-24", "STRUT-FR-09"],
         "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2015": ["BRK-CER-10", "SPK-IR-04", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24"],
         "2016": ["BRK-CER-10", "ROT-BRM-02", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2017": ["BRK-CER-10", "OIL-WIX-01", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
+        "2017": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2018": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
         "2019": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       }
     },
     "kia": {
       "sorento": {
-        "2010": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24"],
+        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "ALT-HD-12", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
@@ -328,16 +328,16 @@
         "2015": ["BRK-CER-10", "ALT-HD-12", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2016": ["BRK-CER-10", "SPK-IR-04", "O2S-DEN-03", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
         "2017": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
-        "2018": ["BRK-CER-10", "OIL-WIX-01", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
+        "2018": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"],
         "2019": ["BRK-CER-10", "COIL-DEN-09", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "BRG-WHL-05"]
       },
       "sportage": {
-        "2010": ["BRK-CER-10", "OIL-WIX-01", "AC-COMP-1012-24", "STR-OEM-24"],
+        "2010": ["BRK-CER-10", "AC-COMP-1012-24", "STR-OEM-24"],
         "2011": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1012-24", "STR-OEM-24"],
         "2012": ["BRK-CER-10", "COIL-DEN-09", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2013": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1012-24", "STR-OEM-24", "BRG-WHL-05"],
         "2014": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
-        "2015": ["BRK-CER-10", "OIL-WIX-01", "SPK-IR-04", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
+        "2015": ["BRK-CER-10", "SPK-IR-04", "AC-COMP-1318-24", "STR-OEM-24", "STRUT-FR-09"],
         "2016": ["BRK-CER-10", "ROT-BRM-02", "AC-COMP-1318-24", "ALT-HD-12", "STRUT-FR-09"],
         "2017": ["BRK-CER-10", "ALT-HD-12", "O2S-DEN-03", "AC-COMP-1318-24", "STR-OEM-24"],
         "2018": ["BRK-CER-10", "CAB-BOS-07", "AC-COMP-1318-24", "ALT-HD-12", "STR-OEM-24"],
@@ -384,7 +384,7 @@
     },
     "mercedes": {
       "sprinter": {
-        "2010": ["MB-ACT-88", "OIL-WIX-01"],
+        "2010": ["MB-ACT-88"],
         "2011": ["MB-ACT-88", "SPK-IR-04"],
         "2012": ["MB-ACT-88", "ALT-HD-12"],
         "2013": ["MB-ACT-88", "BRK-CER-10"],
@@ -392,11 +392,11 @@
         "2015": ["MB-ACT-88", "ALT-HD-12", "ROT-BRM-02"],
         "2016": ["MB-ACT-88", "SPK-IR-04"],
         "2017": ["MB-ACT-88", "ROT-BRM-02", "CAB-BOS-07"],
-        "2018": ["MB-ACT-88", "OIL-WIX-01"],
+        "2018": ["MB-ACT-88"],
         "2019": ["MB-ACT-88", "BRK-CER-10", "ROT-BRM-02"]
       },
       "m-class": {
-        "2010": ["MB-AIR-99", "OIL-WIX-01"],
+        "2010": ["MB-AIR-99"],
         "2011": ["MB-AIR-99", "SPK-IR-04"],
         "2012": ["MB-AIR-99", "BRK-CER-10"],
         "2013": ["MB-AIR-99", "CAB-BOS-07"],
@@ -405,10 +405,10 @@
         "2016": ["MB-AIR-99", "SPK-IR-04", "O2S-DEN-03"],
         "2017": ["MB-AIR-99", "ROT-BRM-02"],
         "2018": ["MB-AIR-99", "CAB-BOS-07"],
-        "2019": ["MB-AIR-99", "OIL-WIX-01", "COIL-DEN-09"]
+        "2019": ["MB-AIR-99", "COIL-DEN-09"]
       },
       "gl-class": {
-        "2010": ["MB-SAM-11", "OIL-WIX-01"],
+        "2010": ["MB-SAM-11"],
         "2011": ["MB-SAM-11", "SPK-IR-04"],
         "2012": ["MB-SAM-11", "BRK-CER-10"],
         "2013": ["MB-SAM-11", "CAB-BOS-07"],
@@ -417,7 +417,7 @@
         "2016": ["MB-SAM-11", "SPK-IR-04"],
         "2017": ["MB-SAM-11", "ROT-BRM-02", "O2S-DEN-03"],
         "2018": ["MB-SAM-11", "CAB-BOS-07"],
-        "2019": ["MB-SAM-11", "OIL-WIX-01", "COIL-DEN-09"]
+        "2019": ["MB-SAM-11", "COIL-DEN-09"]
       }
     }
   }
