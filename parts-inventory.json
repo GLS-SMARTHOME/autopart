@@ -2,31 +2,31 @@
   "parts_catalog": {
   
     "AC-COMP-TY-08A": {
-      "name": "A/C Compresseur (2.5L, 6SEU16C Style)",
+      "name": "A/C Compresseur (2.5L)",
       "brand": "Denso OEM",
       "price": "285.00",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08B": {
-      "name": "A/C Compresseur (2.5L, TSE17C Style)",
+      "name": "A/C Compresseur (2.5L)",
       "brand": "Denso OEM",
       "price": "289.50",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08C": {
-      "name": "A/C Compresseur (1.8L, 6SEU14C Style)",
+      "name": "A/C Compresseur (1.8L)",
       "brand": "Denso OEM",
       "price": "278.50",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08D": {
-      "name": "A/C Compresseur (1.8L, SCSA06C Style)",
+      "name": "A/C Compresseur (1.8L)",
       "brand": "Denso OEM",
       "price": "265.00",
       "image": "https://imgur.com"
     },
     "AC-COMP-TY-08E": {
-      "name": "A/C Compresseur (2.5L, Dynamic Force Style)",
+      "name": "A/C Compresseur (2.5L)",
       "brand": "Denso OEM",
       "price": "315.00",
       "image": "https://imgur.com"
@@ -38,19 +38,19 @@
       "image": "https://imgur.com"
     },
     "ALT-TY-14B": {
-      "name": "Alternateur 100A (1.8L Engine)",
+      "name": "Alternateur 100A (1.8L)",
       "brand": "Denso",
       "price": "145.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14C": {
-      "name": "Alternateur 130A (TNGA Platform)",
+      "name": "Alternateur 130A ",
       "brand": "Denso",
       "price": "195.00",
       "image": "https://imgur.com"
     },
     "ALT-TY-14D": {
-      "name": "Alternateur 100A (1.8L Engine Internal Reg)",
+      "name": "Alternateur 100A (1.8L)",
       "brand": "Denso",
       "price": "158.00",
       "image": "https://imgur.com"
@@ -68,13 +68,13 @@
       "image": "https://imgur.com"
     },
     "STR-TY-31B": {
-      "name": "Démarreur (1.8L Engine Block Layout)",
+      "name": "Démarreur (1.8L )",
       "brand": "Denso OEM",
       "price": "112.50",
       "image": "https://imgur.com"
     },
     "STR-TY-31C": {
-      "name": "Démarreur(Coaxial Planetary Design, TNGA)",
+      "name": "Démarreur",
       "brand": "Denso OEM",
       "price": "129.00",
       "image": "https://imgur.com"
@@ -92,13 +92,13 @@
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02C": {
-      "name": "Roulement de roue (RAV4 Heavy Duty Hub)",
+      "name": "Roulement de roue ",
       "brand": "Koyo",
       "price": "68.50",
       "image": "https://imgur.com"
     },
     "BRG-WHL-TY02D": {
-      "name": "Roulement de roue (TNGA Chassis Platform)",
+      "name": "Roulement de roue",
       "brand": "Koyo",
       "price": "74.00",
       "image": "https://imgur.com"
